@@ -10,19 +10,8 @@ This component is basically a contrib-text which hijacks any anchor tag clicks i
 
 ---
 
-## Usage
-
-To show a notify when an anchor is clicked, it must have an `id`:
-```
-<a id='test' href='#'>link text</a>
-```
-
-Use the `_popupData` object to specify the text shown in the notify. The key value in `_popupData` must match the `id` in bodyText.
-```
-"_popupData": {
-  "test": {
-      "title": "Test!",
-      "message": "This text will show when an a tag with the id 'test' is clicked."
-  }
-}
+## Limitations
+ 
+<p><strong>DOES NOT WORK WITH FRAMEWORK VERSION 5</strong>. Please go to the Framework 5 version of this component on my other github site...</p>
+[github.com/zarek3333/adapt-textNotify](https://github.com/zarek3333/adapt-textNotify)
 ```

@@ -101,12 +101,14 @@ define(function(require) {
 
             this.model.set('_active', false);
 
+            var getcurrentid = this.model.get('_id');
             var bodyText = this.model.get("_popupData").mypopup.message;
             var titleText = this.model.get("_popupData").mypopup.title;
 
             var popupObject = {
                 title: titleText,
-                body: bodyText
+                body: bodyText,
+                _classes: ' txtpopnotify'
             };
 
             Adapt.trigger('notify:popup', popupObject);
@@ -118,6 +120,7 @@ define(function(require) {
 
             this.model.set('_active', false);
 
+            var getcurrentid = this.model.get('_id');
             var bodyText2 = this.model.get("_alertData").myalert.message;
             var titleText2 = this.model.get("_alertData").myalert.title;
             var confirmText2 = this.model.get("_alertData").myalert.confirmButton;
@@ -125,7 +128,8 @@ define(function(require) {
             var alertObject = {
                 title: titleText2,
                 body: bodyText2,
-                confirmText: confirmText2
+                confirmText: confirmText2,
+                _classes: ' txtalertnotify'
             };
 
             Adapt.trigger('notify:alert', alertObject);
@@ -136,6 +140,8 @@ define(function(require) {
             event.preventDefault();
 
             this.model.set('_active', false);
+
+            var getcurrentid = this.model.get('_id');
             this.setCompletionStatus();
         },
 
@@ -144,6 +150,7 @@ define(function(require) {
 
             this.model.set('_active', false);
 
+            var getcurrentid = this.model.get('_id');
             var bodyText3 = this.model.get("_buttonData").button.message;
             var titleText3 = this.model.get("_buttonData").button.title;
             var confirmText3 = this.model.get("_buttonData").button.confirmButton;
@@ -151,7 +158,8 @@ define(function(require) {
             var buttonObject = {
                 title: titleText3,
                 body: bodyText3,
-                confirmText: confirmText3
+                confirmText: confirmText3,
+                _classes: ' txtbutnotify'
             };
 
             Adapt.trigger('notify:alert', buttonObject);

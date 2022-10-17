@@ -5,7 +5,9 @@
 
     <div class="graphic-widget component-widget{{#if _graphic.attribution}} graphic-widget-attribution{{/if}}">
       {{#if _graphic.large}}
-      <img src="{{_graphic.src}}" style="margin-top: 20px;" data-large="{{_graphic.large}}" data-small="{{_graphic.small}}"{{#if _graphic.alt}} alt="{{_graphic.alt}}" tabindex="0"{{else}} class="a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}/>
+        {{#if _externaLink.linkonimg}}<a href='{{_externaLink.linkonimg}}' id='myexternalink' onclick="window.open(this.href, '','resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=yes,dependent=no,width=600,height=600'); return false;">{{/if}}
+          <img src="{{_graphic.src}}" style="margin-top: 20px;" data-large="{{_graphic.large}}" data-small="{{_graphic.small}}"{{#if _graphic.alt}} alt="{{_graphic.alt}}" tabindex="0"{{else}} class="a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}/>
+        {{#if _externaLink.linkonimg}}</a>{{/if}}
       {{/if}}
     </div>
     {{#if _graphic.attribution}}

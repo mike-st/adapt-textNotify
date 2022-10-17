@@ -29,7 +29,8 @@ define(function(require) {
                 'click .component-inner #mybutton' : 'mynotifyButton',
                 'click .textnotify-bottom-text #mypopup' : 'mynotifyPopup',
                 'click .textnotify-bottom-text #myalert' : 'mynotifyAlert',
-                'click .textnotify-bottom-text #myexternalink' : 'myexternaLink'
+                'click .textnotify-bottom-text #myexternalink' : 'myexternaLink',
+                'click .graphic-widget #myexternalink' : 'myexternaLink'
             } : {
                 'inview':                       'inview',
                 'click .textNotify-body-inner #mypopup' : 'mynotifyPopup',
@@ -38,7 +39,8 @@ define(function(require) {
                 'click .component-inner #mybutton' : 'mynotifyButton',
                 'click .textnotify-bottom-text #mypopup' : 'mynotifyPopup',
                 'click .textnotify-bottom-text #myalert' : 'mynotifyAlert',
-                'click .textnotify-bottom-text #myexternalink' : 'myexternaLink'
+                'click .textnotify-bottom-text #myexternalink' : 'myexternaLink',
+                'click .graphic-widget #myexternalink' : 'myexternaLink'
             }
         },
 

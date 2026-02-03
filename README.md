@@ -12,6 +12,5 @@ This component is basically a contrib-text which hijacks any anchor tag clicks i
 
 ## Limitations
  
-<p><strong>DOES NOT WORK WITH FRAMEWORK VERSION 5</strong>. Please go to the Framework 5 version of this component on my other github site...</p>
-[github.com/zarek3333/adapt-textNotify](https://github.com/zarek3333/adapt-textNotify)
+
 ```
